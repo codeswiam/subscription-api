@@ -14,7 +14,7 @@ This is a Subscription Tracker API built with Node.js, Express, and MongoDB. It 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/wiamcodes/subscription-api.git
+    git clone https://github.com/codeswiam/subscription-api.git
     cd subscription-api
     ```
 
