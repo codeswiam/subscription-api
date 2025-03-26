@@ -23,9 +23,9 @@ This is a Subscription Tracker API built with Node.js, Express, and MongoDB. It 
     npm install
     ```
 
-3. Create a `.env.development.local` file and add your environment variables:
+3. Create a `.env.development.local` file and add your [Environment Variables](#environment-variables):
     ```sh
-    cp .env.development.local.example .env.development.local
+    touch .env.development.local
     ```
 
 4. Start the development server:
@@ -82,7 +82,3 @@ The following environment variables are required:
 - `QSTASH_TOKEN`: The Upstash Qstash token
 - `QSTASH_CURRENT_SIGNING_KEY`: The current signing key for Qstash
 - `QSTASH_NEXT_SIGNING_KEY`: The next signing key for Qstash
-
-## License
-
-This project is licensed under the MIT License.
