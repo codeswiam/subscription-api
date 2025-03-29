@@ -18,9 +18,9 @@ userRouter.post("/", (req, res, next) => {
 });
 
 // UPDATE a user by id
-userRouter.put("/:id", updateUser);
+userRouter.put("/:id", authorize, updateUser);
 
 // DELETE a user by id
-userRouter.delete("/:id", deleteUser);
+userRouter.delete("/:id", authorize, deleteUser);
 
 export default userRouter;

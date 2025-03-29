@@ -50,18 +50,19 @@ The API provides endpoints for managing users and subscriptions. You can use too
 - **GET /api/v1/users**: Get all users
 - **GET /api/v1/users/:id**: Get a user by ID (requires authorization)
 - **POST /api/v1/users**: Create a new user
-- **PUT /api/v1/users/:id**: Update a user by ID
-- **DELETE /api/v1/users/:id**: Delete a user by ID
+- **PUT /api/v1/users/:id**: Update a user by ID (requires authorization)
+- **DELETE /api/v1/users/:id**: Delete a user by ID (requires authorization)
 
 ### Subscriptions
 
-- **GET /api/v1/subscriptions**: Get all subscriptions
+(All of these require authorization)
+
+- **POST /api/v1/subscriptions**: Create a new subscription 
 - **GET /api/v1/subscriptions/:id**: Get a subscription by ID
-- **POST /api/v1/subscriptions**: Create a new subscription (requires authorization)
-- **PUT /api/v1/subscriptions/:id**: Update a subscription by ID
-- **DELETE /api/v1/subscriptions/:id**: Delete a subscription by ID
-- **GET /api/v1/subscriptions/user/:id**: Get subscriptions for a user (requires authorization)
+- **GET /api/v1/subscriptions/user/:id**: Get all subscriptions of a user 
+- **PUT /api/v1/subscriptions/:id**: Update a subscription by ID 
 - **PUT /api/v1/subscriptions/:id/cancel**: Cancel a subscription by ID
+- **DELETE /api/v1/subscriptions/:id**: Delete a subscription by ID
 - **PUT /api/v1/subscriptions/upcoming-renewals**: Get upcoming renewals
 
 ### Workflows
