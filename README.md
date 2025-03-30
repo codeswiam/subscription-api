@@ -1,6 +1,6 @@
 # Subscription Tracker API
 
-This is a Subscription Tracker API built with Node.js, Express, and MongoDB. It allows users to manage their subscriptions, including creating, updating, and deleting subscriptions, as well as signing up and signing in.
+This is a Subscription Tracker API built with Node.js, Express, and MongoDB. It allows users to manage their subscriptions, including creating, updating, and deleting subscriptions, as well as signing up and signing in. The application also includes functionality to send reminder emails for upcoming subscription renewals. This ensures users are notified in advance about their subscriptions.
 
 ## Table of Contents
 
@@ -8,7 +8,6 @@ This is a Subscription Tracker API built with Node.js, Express, and MongoDB. It 
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Environment Variables](#environment-variables)
-- [License](#license)
 
 ## Installation
 
@@ -63,7 +62,7 @@ The API provides endpoints for managing users and subscriptions. You can use too
 - **PUT /api/v1/subscriptions/:id**: Update a subscription by ID 
 - **PUT /api/v1/subscriptions/:id/cancel**: Cancel a subscription by ID
 - **DELETE /api/v1/subscriptions/:id**: Delete a subscription by ID
-- **PUT /api/v1/subscriptions/upcoming-renewals**: Get upcoming renewals
+- **GET /api/v1/subscriptions/upcoming-renewals**: Get upcoming renewals
 
 ### Workflows
 
@@ -83,3 +82,7 @@ The following environment variables are required:
 - `QSTASH_TOKEN`: The Upstash Qstash token
 - `QSTASH_CURRENT_SIGNING_KEY`: The current signing key for Qstash
 - `QSTASH_NEXT_SIGNING_KEY`: The next signing key for Qstash
+- `EMAIL_SERVICE`: The email service provider (e.g., Gmail, SendGrid)
+- `EMAIL_USER`: The email account username
+- `EMAIL_PASSWORD`: The email account password
+- `EMAIL_FROM`: The sender's email address
